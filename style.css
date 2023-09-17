@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #F6F8FA;
+    --main-stroke-color: #F1F1F3;
+    --second-color: #FFFFFF;
+    --btn-color: #EDEDF2;
+    --btn-text-color: #444755;
+    --btn-stroke-color: #E4E5E7;
+    --text-color: #0B0C11;
+    --main-blue-color: #2253FF;
+}
+
+.backgroundBtnColor {
+    background-color: var(--btn-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--second-color);
+    font-family: "Inter";
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    border: 3px solid var(--main-stroke-color);
+    width: 386px;
+    height: 95vh;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    /* background-color: red; */
+    background-color: var(--second-color);
+}
+
+.title-sidebar {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.title-sidebar h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.all-collections {
+    margin-top: 54px;
+}
+
+.collection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 16px;
+}
+
+.collection:hover {
+    box-sizing: content-box;
+    background-color: #F5F5F5;
+}
+
+.collection-left {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    gap: 16px;
+}
+
+.collection-left img {
+    width: 24px;
+}
+
+.collection-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* .delete-icon {
+    border: none;
+    background-color: transparent;
+} */
+
+.collection-right img {
+    width: 32px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.collection-right img:hover {
+    width: 40px;
+}
+
+.todo-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px;
+    width: 32px;
+    height: auto;
+    color: var(--btn-text-color);
+    background-color: var(--second-color);
+    border: 1px solid var(--main-stroke-color);
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-counter:hover {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+
+/* Input field Dashboard */
+
+.add-collection {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* .add-collection:hover {
+    background-color: #0E0E11;
+} */
+
+.add-collection-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
+    margin-left: 12px;
+}
+
+.add-collection-left input {
+    color: var(--text-color);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    background-color: var(--second-color);
+}
+
+.add-collection-left input:focus {
+    outline: 0;
+    background-color: var(--btn-color);
+}
+
+.backgroundColor {
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.backgroundColor-add-spacing {
+    gap: 8px;
+}
+
+.backgroundColor:hover {
+    background-color: var(--btn-color);
+}
+
+.add-collection-left img {
+    width: 24px;
+}
+
+
+/* Popup-Collection */
+
+.popup-new-collection {
+    position: absolute;
+    right: 70%;
+    width: 350px;
+    height: 450px;
+    background-color: var(--second-color);
+    border: 1.5px solid var(--main-stroke-color);
+    border-radius: 12px;
+    padding: 20px;
+    display: none;
+}
+
+.popup-selectors {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.selector-colors p {
+    color: var(--btn-text-color);
+    font-weight: 600;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.selector-colors p:hover {
+    background-color: var(--btn-color);
+    border-radius: 8px;
+}
+
+.selector-emojis p {
+    color: var(--btn-text-color);
+    padding: 10px;
+    background-color: var(--btn-color);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.selector-emojis p:hover {
+    background-color: var(--btn-color);
+}
+
+.popup-new-collection input {
+    color: var(--text-color);
+}
+
+input {
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    background-color: var(--btn-color);
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.popup-new-collection btn {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.popup-new-collection btn:hover {
+    background-color: #d0d0d8;
+}
+
+.popup-new-collection .all {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+/* Emoji List */
+
+.displayToggle {
+    display: block;
+}
+
+.displayToggleNone {
+    display: none;
+}
+
+#emojiList {
+    margin-top: 10px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    height: 200px;
+    overflow-x: hidden;
+    font-size: 1.6em;
+}
+
+#emojiList li {
+    cursor: pointer;
+}
+
+#search-emojis-colors {
+    color: var(--text-color)
+}

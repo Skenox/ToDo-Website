@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>TaskBuddy - Manage your ToDo's</title>
+</head>
+<body>
+<!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="title-sidebar">
+            <h2>Collections</h2>
+        </div>
+        <div class="all-collections">
+            <div class="collection">
+                <div class="collection-left">
+                    <img src="images/home-icon.png">
+                    <p>Home</p>
+                </div>
+                <div class="collection-right">
+                    <!-- <button type="button" onclick="deleteIcon()"> --><img src="images/settings-icon.png" class="delete-icon">
+                    <p class="todo-counter">12</p>
+                </div>
+            </div>
+
+            <div class="add-collection">
+                <div class="add-collection-left">
+                    <div class="backgroundColor">
+                        <div class="dropdown-colors-emojis">
+                            
+                        </div>
+                        <img src="images/plus-icon.png" id="add-popup">
+                    </div>
+                    <input placeholder="Create new collection" id="inputCollection"></input>
+                </div>
+            </div>
+
+
+            <div class="popup-new-collection">
+                <div class="popup-selectors">
+                    <div class="selector-colors">
+                        <p id="selector-colors">Colors</p>
+                    </div>
+                    <div class="selector-emojis">
+                        <p id="selector-emojis">Emojis</p>
+                    </div>
+                </div>
+                <input type="search" placeholder="Search" id="search-emojis-colors">
+                <p class="all">All</p>
+                <ul id="emojiList"></ul>
+                <btn id="btn-add-collection">Add collection</btn>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+</body>
+</html>
